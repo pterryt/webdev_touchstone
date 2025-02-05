@@ -1,0 +1,51 @@
+@import url('constants.css');
+
+
+#contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#contact-container button {
+    width: 8rem;
+}
+#about-us-desc {
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    max-width: 80%;
+    background-color: var(--primary-sky-bloom);
+    padding: 1rem;
+}
+
+#hours {
+    width: max-content;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    background-color: var(--primary-sunlit-petal);
+    padding: 1rem;
+    outline: black solid 1px;
+}
+
+.day {
+    font-weight: bolder;
+}
+
+input[name="firstname"] {
+    width: 5em;
+}
+input[name="lastname"] {
+    width: 8em;
+}
+input[name="email"] {
+    width: 11em;
+}
+input[name="number"] {
+    width: 8em;
+}
+textarea[name="message"] {
+    width: 35em;
+    height: 7em;
+    resize: none;
+}
+

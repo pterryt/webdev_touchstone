@@ -1,10 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="home.css">
+    <script src="alerts.js" defer></script>
 </head>
+
 <body>
-$END$
+
+<!-- HEADER -->
+<header>
+    <img src="resources/client_icon_canopy_green.png" alt="company logo" width="50">
+    <p id="header-title">Bloom Valley Nursery</p>
+    <nav>
+        <ul>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="page-body">
+
+    <!-- HIGHLIGHTs -->
+    <div id="company-highlights-container">
+
+        <p id="intro-line">At Bloom Valley Nursery, we're more than just a plant shop—</p>
+        <p id="company-highlights">We’re a community of passionate gardeners dedicated to making homes and outdoor
+            spaces
+            greener, one plant at a time. With a commitment to sustainability and locally sourced greenery, we ensure
+            that every plant you bring home is grown with care. From rare finds to everyday favorites, we offer an
+            extensive selection of plants, trees, and garden essentials to help you cultivate your dream garden.</p>
+    </div>
+
+    <!-- PROMOTION -->
+    <h5 id="promo-title">Promotions going on right now!</h5>
+    <div id="promotion-container">
+        <p id="promo-1">February Special: Love Grows Here! – Buy one indoor plant, get the second half off to bring a
+            little extra green into your home this season.</p>
+
+        <p id="promo-2">Spring Prep Sale! – Get 15% off all organic fertilizers and soil to start your garden off
+            right
+            this coming spring.</p>
+    </div>
+
+    <!-- PRODUCT IMAGES -->
+    <div id="product-images-container">
+        <img src="resources/Client1_PottingSoil.png" alt="potting soil">
+        <img src="resources/Client1_BirchTree.png" alt="birch tree">
+    </div>
+
+    <!-- PERKS -->
+    <div id="perks-container">
+
+        <h3 id="perks-title">Why Shop With Us?</h3>
+
+        <div id="perks">
+
+            <div class="perk-inner-container">
+                <h5 class="perk-subtitle">Locally Grown, Sustainably Sourced</h5>
+                <p class="perk-text">We take pride in growing our plants right here in Bloom
+                    Valley, using eco-friendly practices to ensure healthy, thriving greenery for your home and
+                    garden.</p>
+            </div>
+
+            <div class="perk-inner-container">
+                <h5 class="perk-subtitle">Expert Advice, Always Free</h5>
+                <p class="perk-text">Whether you're a beginner or a seasoned gardener, our knowledgeable
+                    team is always ready to provide personalized tips and recommendations to help your plants
+                    flourish.</p>
+            </div>
+
+            <div class="perk-inner-container">
+                <h5 class="perk-subtitle">Exclusive Community Perks</h5>
+                <p class="perk-text">Join our Garden Club for early access to seasonal arrivals,
+                    special
+                    discounts, and invitations to exclusive workshops and events!</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- SHOP BY CATEGORY -->
+    <div id="shop-by-category-container">
+        <h3 id="category-title">Shop by Category</h3>
+        <ul id="categories">
+            <li><a href="">Trees</a></li>
+            <li><a href="">Plants</a></li>
+            <li><a href="">Accessory</a></li>
+        </ul>
+    </div>
+</div>
+<!-- FOOTER -->
+<footer>
+    <nav>
+        <ul>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="about_us.html">About</a></li>
+        </ul>
+        <a id="subscribe-link" onClick="subscribe_clicked(event)" href="">Subscribe to Newsletter</a>
+        <div id="social-media-container">
+            <a href="https://linkedin.com">
+                <img src="resources/icons8-linkedin-480.png" alt="linkedin">
+            </a>
+            <a href="https://instagram.com">
+                <img src="resources/icons8-instagram-480.png" alt="linkedin">
+            </a>
+        </div>
+    </nav>
+</footer>
 </body>
 </html>

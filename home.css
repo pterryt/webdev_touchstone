@@ -1,0 +1,121 @@
+@import url('constants.css');
+
+
+/* PROMOS */
+#promo-title {
+    text-align: center;
+}
+#promotion-container {
+    /*text-align: center;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4.5rem;
+}
+#promotion-container p {
+    max-width: 40%;
+}
+
+#promo-title {
+    padding: 2em 0 0 0;
+    margin: 0;
+}
+
+#promo-1 {
+    background-color: var(--primary-meadow-mist);
+    padding: .5em;
+    border: 1px solid black;
+    border-radius: .1em;
+}
+
+#promo-2 {
+    background-color: var(--primary-sky-bloom);
+    padding: .5em;
+    border: 1px solid black;
+    border-radius: .1em;
+}
+
+
+/* HIGHLIGHTS */
+#intro-line {
+    font-family: var(--font-body-large);
+    font-weight: var(--font-weight-title);
+    font-size: var(--font-size-body-large);
+}
+#company-highlights {
+    margin: 1em 4em;
+}
+
+/* PRODUCT IMAGES */
+#product-images-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+#perks-title {
+    text-align: center;
+}
+/* PERKS */
+#perks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+}
+.perk-inner-container {
+    max-width: 25%;
+    border: 1px solid var(--primary-canopy-green);
+    padding: 1rem 1rem 0 1rem;
+}
+
+.perk-text {
+    background-color: var(--primary-sunlit-petal);
+    padding: .5em;
+    border: 1px solid black;
+    border-radius: .1em;
+}
+
+/* SHOP BY CATEGORY */
+
+#category-title {
+    margin-right: 1.5em;
+}
+#shop-by-category-container {
+    margin-top: 1rem;
+    padding: 2em 0 2em 2em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 1em;
+    border: 1px solid black;
+}
+
+#categories {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+#categories a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: bold;
+    margin: 1em;
+    padding: .5em;
+    transition: color 0.3s ease;
+    background-color: var(--primary-meadow-mist);
+    border: 1px solid black;
+    border-radius: .25em;
+}
+
+
+

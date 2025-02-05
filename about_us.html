@@ -1,10 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="about_us.css">
 </head>
+
 <body>
-$END$
+
+<!-- HEADER -->
+<header>
+    <img src="resources/client_icon_canopy_green.png" alt="company logo" width="50">
+    <p id="header-title">Bloom Valley Nursery</p>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="community.html">Community</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<div class="page-body">
+    <!-- ABOUT US -->
+    <div id="about-us-container">
+        <h2 id="about-us-header">About Us</h2>
+        <p id="about-us-desc">
+            Welcome to Bloom Valley Nursery, your local, family-owned destination for high-quality plants,
+            trees, and gardening supplies. Founded in 1998, we have spent over two decades helping our community
+            cultivate
+            beautiful, thriving green spaces. Nestled in the heart of our town, we are passionate about assisting
+            gardeners—both
+            beginners and experts—bring their outdoor visions to life.<br><br>
+
+            At Bloom Valley Nursery, we believe that gardening is more than just a hobby; it’s a way to cultivate
+            beauty,
+            sustainability, and creativity in everyday life. That’s why we offer a diverse selection of vibrant plants,
+            expert
+            advice, and eco-friendly gardening solutions to support your journey. From native perennials to rare
+            ornamental
+            trees, our collection is carefully curated to suit the needs of every plant lover.<br><br>
+
+            As a business rooted in family values and a love for nature, we are committed to fostering a thriving
+            community of
+            gardening enthusiasts. Whether you’re looking to refresh your backyard, start a home garden, or find the
+            perfect
+            plant for your space, we’re here to help every step of the way.<br><br>
+
+            Stop by and explore our greenhouse, where you'll find not only lush greenery but also a friendly team ready
+            to share
+            tips and recommendations. Come grow with us at Bloom Valley Nursery—where nature and community bloom
+            together!
+        </p>
+
+    </div>
+
+    <!-- HOURS -->
+    <div id="hours-container">
+        <h3 id="hours-header">Hours</h3>
+        <div id="hours">
+            <p><span class="day">Monday:</span> 9 a.m. - 6 p.m.</p>
+            <p><span class="day">Tuesday:</span> 9 a.m. - 6 p.m.</p>
+            <p><span class="day">Wednesday:</span> 9 a.m. - 6 p.m.</p>
+            <p><span class="day">Thursday:</span> 9 a.m. - 6 p.m.</p>
+            <p><span class="day">Friday:</span> 9 a.m. - 6 p.m.</p>
+            <p><span class="day">Saturday:</span> 10 a.m. - 5 p.m.</p>
+            <p><span class="day">Sunday:</span> 10 a.m. - 5 p.m.</p>
+        </div>
+    </div>
+
+    <!-- CONTACT FORM -->
+    <form action="" method="POST" id="contact-container">
+        <h3 id="contact-header">Custom Order / Feedback</h3>
+        <label>Contact Info</label>
+        <div id="name-container">
+            <input type="text" name="firstname" id="firstname" placeholder="First Name">
+            <input type="text" name="lastname" id="lastname" placeholder="Last Name">
+        </div>
+        <div id="contact-info-container">
+            <input type="email" name="email" id="email" placeholder="Email Address">
+            <input type="tel" name="number" id="number" placeholder="Phone Number">
+        </div>
+        <label>Message</label>
+        <textarea name="message" id="message" placeholder="Type your message here..."></textarea>
+        <div id="order-checkbox-container">
+            <input type="checkbox" name="ordercheckbox" id="ordercheckbox">
+            <label for="ordercheckbox">Is this an order?</label>
+        </div>
+        <button>Submit</button>
+    </form>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="community.html">Community</a></li>
+        </ul>
+        <a id="subscribe-link" href="">Subscribe to Newsletter</a>
+        <div id="social-media-container">
+            <a href="https://linkedin.com">
+                <img src="resources/icons8-linkedin-480.png" alt="linkedin" width="48">
+            </a>
+            <a href="https://instagram.com">
+                <img src="resources/icons8-instagram-480.png" alt="linkedin" width="48">
+            </a>
+        </div>
+    </nav>
+</footer>
 </body>
 </html>

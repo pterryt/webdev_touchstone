@@ -1,0 +1,61 @@
+@import url('constants.css');
+
+/* PAST EVENTS */
+.past-event-text-container {
+    margin: 0 1em;
+}
+
+.past-event-desc {
+    background-color: var(--primary-sunlit-petal);
+    padding: 1em;
+}
+.past-event-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    border: black solid 1px;
+    margin-bottom: 1em;
+}
+
+.past-event-img {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.past-event-img-desc {
+    font-size: var(--font-size-captions);
+    margin: 0 .5em .5em .5em;
+}
+
+/* FUTURE EVENTS */
+#future-events-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 4rem;
+
+}
+
+.future-event-date {
+    padding: 0;
+    margin: 0;
+}
+
+.future-event-title {
+    padding: 0;
+    margin: 0;
+}
+
+.future-event-inner-container {
+    width: 25%;
+    border: 1px solid black;
+    padding: 1em;
+    background-color: var(--primary-meadow-mist);
+}
+
+.future-event-desc {
+    background-color: var(--primary-cloudy-gray);
+    padding: .5em;
+}

@@ -1,0 +1,31 @@
+:root {
+    --primary-canopy-green: #014038;
+    --primary-meadow-mist: #96BAA0;
+    --primary-sky-bloom: #BDD4DA;
+    --primary-sunlit-petal: #F0C06D;
+    --primary-cloudy-gray: #F7F7F7;
+    --text-color: #00231C;
+
+    --font-title-large: Arial, serif;
+    --font-size-title-large: 30px;
+    --font-weight-title-large: bold;
+
+    --font-title: Arial, serif;
+    --font-size-title: 25px;
+    --font-weight-title: bold;
+
+    --font-subtitle: Comfortaa, 'Times New Roman', Times, serif;
+    --font-size-subtitle: 15px;
+
+    --font-body-large: Calibri, 'Times New Roman', Times, serif;
+    --font-size-body-large: 20px;
+
+    --font-body-strong: Calibri Bold, serif;
+    --font-size-body-strong: 16px;
+
+    --font-body: Calibri, 'Times New Roman', Times, serif;
+    --font-size-body: 16px;
+
+    --font-captions: Arial Bold, serif;
+    --font-size-captions: 11px;
+}

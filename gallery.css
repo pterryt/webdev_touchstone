@@ -1,0 +1,34 @@
+@import url('constants.css');
+
+
+.page-body {
+    justify-content: center;
+}
+
+#products-container {
+    display: flex;
+    justify-content: center;
+}
+
+.products-cell {
+    justify-content: center;
+    max-width: 20em;
+    text-align: center;
+    border: 1px solid black;
+    padding: 1em;
+}
+.products-cell img {
+    border: 2px solid black;
+}
+
+.product-desc {
+    font-size: .6rem;
+    text-align: center;
+    background-color: var(--primary-sky-bloom);
+    padding: .5em;
+    border-radius: .5em;
+}
+
+.product-image {
+    max-width: 15em;
+}

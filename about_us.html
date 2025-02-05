@@ -72,7 +72,7 @@
     </div>
 
     <!-- CONTACT FORM -->
-    <form action="" method="POST" id="contact-container">
+    <form autocomplete="on" id="contact-container">
         <h3 id="contact-header">Custom Order / Feedback</h3>
         <label>Contact Info</label>
         <div id="name-container">
@@ -83,13 +83,13 @@
             <input type="email" name="email" id="email" placeholder="Email Address">
             <input type="tel" name="number" id="number" placeholder="Phone Number">
         </div>
-        <label>Message</label>
+        <label for="message">Message</label>
         <textarea name="message" id="message" placeholder="Type your message here..."></textarea>
         <div id="order-checkbox-container">
             <input type="checkbox" name="ordercheckbox" id="ordercheckbox">
             <label for="ordercheckbox">Is this an order?</label>
         </div>
-        <button>Submit</button>
+        <input id="submit-button" type="button" onClick="submitForm()" value="Submit"/>
     </form>
 </div>
 

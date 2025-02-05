@@ -54,6 +54,11 @@
     gap: 4rem;
 }
 
+#product-images-container img {
+    border: 1px solid var(--primary-canopy-green);
+
+}
+
 #perks-title {
     text-align: center;
 }
@@ -69,13 +74,14 @@
     max-width: 25%;
     border: 1px solid var(--primary-canopy-green);
     padding: 1rem 1rem 0 1rem;
+    border-radius: .25em;
 }
 
 .perk-text {
     background-color: var(--primary-sunlit-petal);
     padding: .5em;
     border: 1px solid black;
-    border-radius: .1em;
+    border-radius: .25em;
 }
 
 /* SHOP BY CATEGORY */

@@ -5,6 +5,7 @@
     <title>Gallery</title>
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="gallery.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="alerts.js" defer></script>
 </head>
 <body>
@@ -15,6 +16,7 @@
     <p id="header-title">Bloom Valley Nursery</p>
     <nav>
         <ul>
+            <li class="marker"><a href="#">You are currently on Gallery Page</a></li>
             <li><a href="home.html">Home</a></li>
             <li><a href="community.html">Community</a></li>
             <li><a href="about_us.html">About Us</a></li>
@@ -27,12 +29,14 @@
     <!-- CART MODAL -->
     <div id="cart-modal">
         <span id="close-modal">&times;</span>
-        <h3>Shopping Cart</h3>
-        <br>
-       <ul id="cart-items"></ul>
-        <br>
-        <button id="clear-cart-button">Clear Cart</button>
-        <button id="process-order-button">Process Order</button>
+        <div id="main-modal-content">
+            <h3>Shopping Cart</h3>
+            <br>
+            <ul id="cart-items"></ul>
+            <br>
+            <button id="clear-cart-button">Clear Cart</button>
+            <button id="process-order-button">Process Order</button>
+        </div>
     </div>
 
     <!-- PRODUCT TABLE -->
@@ -42,7 +46,7 @@
             <tr>
                 <td class="products-cell">
                     <p class="product-name">Apple Tree</p>
-                    <img class="product-image" src="resources/Client1_AppleTree.png">
+                    <img class="product-image" src="resources/Client1_AppleTree.png" alt="Apple Tree">
 
                     <p class="product-desc">A low-maintenance succulent prized for its striking architectural form and
                         soothing gel. Perfect for adding a touch of the desert to any home or garden.
@@ -52,7 +56,7 @@
                 </td>
                 <td class="products-cell">
                     <p class="product-name">Birch Tree</p>
-                    <img class="product-image" src="resources/Client1_BirchTree.png">
+                    <img class="product-image" src="resources/Client1_BirchTree.png" alt="Birch Tree">
 
                     <p class="product-desc">A low-maintenance succulent prized for its striking architectural form and
                         soothing gel. Perfect for adding a touch of the desert to any home or garden.
@@ -62,7 +66,7 @@
                 </td>
                 <td class="products-cell">
                     <p class="product-name">Maple Tree</p>
-                    <img class="product-image" src="resources/Client1_MapleTree.png">
+                    <img class="product-image" src="resources/Client1_MapleTree.png" alt="Maple Tree">
 
                     <p class="product-desc">A low-maintenance succulent prized for its striking architectural form and
                         soothing gel. Perfect for adding a touch of the desert to any home or garden.
@@ -74,7 +78,7 @@
             <tr>
                 <td class="products-cell">
                     <p class="product-name">Aloe Plant</p>
-                    <img class="product-image" src="resources/Client1_AloePlant.png">
+                    <img class="product-image" src="resources/Client1_AloePlant.png" alt="Aloe Plant">
 
                     <p class="product-desc">A low-maintenance succulent prized for its striking architectural form and
                         soothing gel. Perfect for adding a touch of the desert to any home or garden.
@@ -84,7 +88,7 @@
                 </td>
                 <td class="products-cell">
                     <p class="product-name">Spider Plant</p>
-                    <img class="product-image" src="resources/Client1_SpiderPlant.png">
+                    <img class="product-image" src="resources/Client1_SpiderPlant.png" alt="Spider Plant">
 
                     <p class="product-desc">A low-maintenance succulent prized for its striking architectural form and
                         soothing gel. Perfect for adding a touch of the desert to any home or garden.
@@ -94,7 +98,7 @@
                 </td>
                 <td class="products-cell">
                     <p class="product-name">String of Pearls</p>
-                    <img class="product-image" src="resources/Client1_StringofPearls.png">
+                    <img class="product-image" src="resources/Client1_StringofPearls.png" alt="String of Pearls">
 
                     <p class="product-desc">A low-maintenance succulent prized for its striking architectural form and
                         soothing gel. Perfect for adding a touch of the desert to any home or garden.
@@ -106,7 +110,7 @@
             <tr>
                 <td class="products-cell">
                     <p class="product-name">Bird House</p>
-                    <img class="product-image" src="resources/Client1_BirdHouse.png">
+                    <img class="product-image" src="resources/Client1_BirdHouse.png" alt="Bird House">
 
                     <p class="product-desc">A low-maintenance succulent prized for its striking architectural form and
                         soothing gel. Perfect for adding a touch of the desert to any home or garden.
@@ -116,7 +120,7 @@
                 </td>
                 <td class="products-cell">
                     <p class="product-name">Potting Soil</p>
-                    <img class="product-image" src="resources/Client1_PottingSoil.png">
+                    <img class="product-image" src="resources/Client1_PottingSoil.png" alt="Potting Soil">
 
                     <p class="product-desc">A low-maintenance succulent prized for its striking architectural form and
                         soothing gel. Perfect for adding a touch of the desert to any home or garden.
@@ -126,7 +130,7 @@
                 </td>
                 <td class="products-cell">
                     <p class="product-name">Watering Can</p>
-                    <img class="product-image" src="resources/Client1_WateringCan.png">
+                    <img class="product-image" src="resources/Client1_WateringCan.png" alt="Watering Can">
 
                     <p class="product-desc">A low-maintenance succulent prized for its striking architectural form and
                         soothing gel. Perfect for adding a touch of the desert to any home or garden.
@@ -143,11 +147,16 @@
 <footer>
     <nav>
         <ul>
+            <li class="marker"><a href="#">You are currently on Gallery Page</a></li>
             <li><a href="home.html">Home</a></li>
             <li><a href="community.html">Community</a></li>
             <li><a href="about_us.html">About</a></li>
         </ul>
-        <a id="subscribe-link" href="">Subscribe to Newsletter</a>
+        <form autocomplete="on" id="subscribe-container">
+            <input type="email" name="subscribe email" id="sub-email" placeholder="Enter your email address" required>
+            <input id="subscribe-link" type="button" onclick="subscribe_clicked(event)" value="Subscribe to Newsletter"/>
+        </form>
+
         <div id="social-media-container">
             <a href="https://linkedin.com">
                 <img src="resources/icons8-linkedin-480.png" alt="linkedin" width="48">

@@ -5,6 +5,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="home.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="alerts.js" defer></script>
 </head>
 
@@ -16,6 +17,7 @@
     <p id="header-title">Bloom Valley Nursery</p>
     <nav>
         <ul>
+            <li class="marker"><a href="#">You are currently on Home Page</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="community.html">Community</a></li>
             <li><a href="about_us.html">About Us</a></li>
@@ -99,11 +101,15 @@
 <footer>
     <nav>
         <ul>
+            <li class="marker"><a href="#">You are currently on Home Page</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="community.html">Community</a></li>
             <li><a href="about_us.html">About</a></li>
         </ul>
-        <a id="subscribe-link" onClick="subscribe_clicked(event)" href="">Subscribe to Newsletter</a>
+        <form autocomplete="on" id="subscribe-container">
+            <input type="email" name="subscribe email" id="sub-email" placeholder="Enter your email address" required>
+            <input id="subscribe-link" type="button" onclick="subscribe_clicked(event)" value="Subscribe to Newsletter"/>
+        </form>
         <div id="social-media-container">
             <a href="https://linkedin.com">
                 <img src="resources/icons8-linkedin-480.png" alt="linkedin">

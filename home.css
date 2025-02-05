@@ -26,6 +26,7 @@
     padding: .5em;
     border: 1px solid black;
     border-radius: .1em;
+    width: 40%;
 }
 
 #promo-2 {
@@ -33,6 +34,7 @@
     padding: .5em;
     border: 1px solid black;
     border-radius: .1em;
+    width: 40%;
 }
 
 
@@ -56,6 +58,7 @@
 
 #product-images-container img {
     border: 1px solid var(--primary-canopy-green);
+    width: 40%;
 
 }
 
